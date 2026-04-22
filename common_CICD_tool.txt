@@ -1,0 +1,12 @@
+CI/CD Tools — Overview
+
+Continuous Integration (CI) and Continuous Delivery/Deployment (CD) tools streamline development, testing, and deployment. Some tools focus on integration, others on build/test automation and release management.
+Jenkins is a widely used open-source CI/CD server that can orchestrate builds, tests, and deployments.
+
+Typical Jenkins CI/CD Workflow
+- Developer commit: Code is pushed to a remote repository (GitHub, GitLab, Bitbucket).
+- Trigger: Jenkins detects the change (webhook or polling).
+- Build: Jenkins runs the build (Maven, Gradle, Docker, etc.).
+- Test: Automated tests execute to validate quality.
+- Deploy: Successful builds are deployed to staging or production.
+- Feedback: Notifications (email, Slack, etc.) inform developers of success or failure.

@@ -1,0 +1,27 @@
+CICD - Continuous Integration and Continuous Deployment
+
+Continuous Integration (CI) and Continuous Deployment (CD) are software development practices that aim to improve the software development process by automating the building, testing, and deployment of applications.
+• It automates code integration, testing, and deployment workflows.
+• Reduces manual effort while improving software quality.
+• Enables faster, more consistent, and reliable releases.
+The Three Pillars of CI/CD
+
+To master CI/CD, understand the differences between the three "Continuous" concepts.
+
+1. Continuous Integration (CI)
+- Goal: Prevent "integration hell."
+- Process: Developers merge changes to the main branch frequently (ideally daily).
+- Automation: On every commit, an automated system builds the code and runs unit tests; failing tests reject the build and notify the developer.
+
+2. Continuous Delivery (CD)
+- Goal: Be ready to release at any time.
+- Process: After CI succeeds, code is automatically deployed to staging/test environments for integration and load testing.
+- Release: The codebase is always in a deployable state; production deployment is a manual decision (e.g., clicking "Deploy").
+
+3. Continuous Deployment (CD)
+- Goal: Eliminate human intervention.
+- Process: Same as Continuous Delivery, but if all automated tests pass in staging, the code is automatically deployed to production.
+- Requirement: Requires extremely robust, trustworthy automated test suites.
+
+
+When a developer saves (commits) their code to a version control system like Git, the CI pipeline starts. It takes the new changes, builds the project, and runs tests automatically. After that, the server tells the developer if adding the new code to the existing code worked or failed.
